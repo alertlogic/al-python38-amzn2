@@ -1,4 +1,4 @@
-pip3 install \
+pip3.8 install \
     boto3==1.13.7 \
     botocore==1.16.7 \
     docutils==0.15.2 \
