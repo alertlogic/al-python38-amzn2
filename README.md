@@ -3,13 +3,13 @@
 ### to register repo and deploy with codebuild
 ```bash
 # to register repo
-aws --region=us-east-1 --profile=dev-sysops-dsa cloudformation create-stack --stack-name ${MYREPO} --template-body file://pipeline_cfn.yml --capabilities CAPABILITY_NAMED_IAM
+aws --region=us-east-1 --profile=dev-sysops-dsa cloudformation create-stack --stack-name al-python38-amzn2 --template-body file://pipeline_cfn.yml --capabilities CAPABILITY_NAMED_IAM
 
-# to deploy to integration
-aws --region=us-east-1 --profile=dev-sysops-dsa codebuild start-build --project-name ${MYREPO}
+# to deploy to integration, merge pull request or execute
+aws --region=us-east-1 --profile=dev-sysops-dsa codebuild start-build --project-name al-python38-amzn2
 
 # to deploy to all mirrors, including production
-aws --region=us-east-1 --profile=dev-sysops-dsa codebuild start-build --project-name ${MYREPO} --environment-variables-override name=PROD_RELEASE,value=RFC,type=PLAINTEXT
+aws --region=us-east-1 --profile=dev-sysops-dsa codebuild start-build --project-name al-python38-amzn2 --environment-variables-override name=PROD_RELEASE,value=RFC,type=PLAINTEXT
 ```
 
 # developer notes
