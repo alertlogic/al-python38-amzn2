@@ -6,3 +6,4 @@ yum install -y redhat-lsb-core sudo wget bash curl gpg2 which git source vim
 yum groupinstall -y 'Development Tools'
 yum install -y rpmdevtools rpmlint createrepo yum-utils
 # add dependancy repos here
+amazon-linux-extras enable python3.8 || echo "Could not enable amazon-linux-extras python3.8!"
