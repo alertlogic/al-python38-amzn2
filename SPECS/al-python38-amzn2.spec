@@ -10,10 +10,10 @@
 # 
 ###################################################
 
-Name:       al-python3
+Name:       al-python38-amzn2
 Version:    %{version}
 Release:    %{release}
-Summary:    AlertLogic al-python3
+Summary:    AlertLogic al-python38-amzn2
 License:    AlertLogic (c). All rights reserved.
 BuildArch:  noarch
 Provides:   al-python
@@ -21,7 +21,7 @@ Requires(pre):   al-s3repo
 Requires(pre):   python38
 
 %description
-Install and configure al-python3
+Install and configure al-python38-amzn2
 
 %prep
 # add sources
