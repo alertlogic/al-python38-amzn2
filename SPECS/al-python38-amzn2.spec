@@ -36,7 +36,7 @@ ln -s python3.8 %{buildroot}/usr/bin/python38
 
 %files
 /usr/local/sbin/*
-/usr/local/bin/*
+/usr/bin/*
 
 %pre
 
